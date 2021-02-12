@@ -33,8 +33,8 @@ console.log('Javascript is really fun!');
 
 // Making an Array 
 const whatToLearn = [
-    "React.js", 
-    "Node.js", 
+    "React.js",
+    "Node.js",
     "Javascript"
 ];
 
@@ -44,8 +44,8 @@ console.log("I am Learning", whatToLearn[0]);
 var cars = ['Neon', 'Civic', 'Maximum', 'Corola', 'Accord'];
 var text = '';
 var i;
-for(i = 0; i < cars.length; i++) {
-    text +=  cars[i] + '<br>';
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + '<br>';
 }
 
 var carsUpper = text.toUpperCase();
@@ -72,3 +72,16 @@ var mike = new person('Michael Harris', '777 Elm St', 'Compton', 'CA', '90220');
 var mikeUpper = mike.name.toUpperCase();
 
 document.getElementById('result3').innerHTML = mikeUpper;
+
+console.log(mike);
+
+
+document.getElementById('btn').addEventListener('click', getTheDate);
+
+function getTheDate() {
+    const d = new Date();
+    document.getElementById('result4').innerHTML = d;
+    console.log("Todays date is " + d);
+}
+
+
