@@ -84,4 +84,27 @@ function getTheDate() {
     console.log("Todays date is " + d);
 }
 
+// MESSING WITH JS MAKING BACKGROUND APPEAR WHEN MOUSE HOVER OVER
+document.getElementById('colSection').addEventListener('mouseover', sectionChanged);
 
+function sectionChanged() {
+    document.getElementById('colSection').style.backgroundImage = "url('https://www.pactsafe.com/hs-fs/hubfs/Node-JS-logo.png?t=1502379401224&width=750&name=Node-JS-logo.png')";
+
+    document.getElementById('colSection').style.color = "#fff";
+
+    document.getElementById('colSection').style.backgroundSize = "cover";
+
+    console.log("Mouse over")
+}
+
+
+// CHANGING SECTION BACK WHEN MOUSE IS OUT
+document.getElementById('colSection').addEventListener('mouseout', sectionChangedBack);
+
+function sectionChangedBack() {
+    document.getElementById('colSection').style.backgroundImage = "none";
+
+    document.getElementById('colSection').style.color = "#000";
+
+    console.log("Mouse out")
+}
