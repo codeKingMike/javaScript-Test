@@ -71,6 +71,11 @@ function person(name, address, city, state, zip) {
 var mike = new person('Michael Harris', '777 Elm St', 'Compton', 'CA', '90220');
 var mikeUpper = mike.name.toUpperCase();
 
+
+var sentence = `My name is  ${mike.name}  and I live in the city of ${mike.city}`;
+
+document.getElementById('result5').innerHTML = sentence;
+
 document.getElementById('result3').innerHTML = mikeUpper;
 
 console.log(mike);
