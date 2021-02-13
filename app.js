@@ -113,3 +113,13 @@ function sectionChangedBack() {
 
     console.log("Mouse out")
 }
+
+
+var lugCars = ['Bently', 'Porch', 'Hummer', 'Viper', 'Testla'];
+
+var x, txt;
+txt = "";
+for (x in lugCars) {
+    txt += lugCars[x] + "<br>";
+}
+document.getElementById('testing').innerHTML = txt;
