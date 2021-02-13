@@ -114,7 +114,7 @@ function sectionChangedBack() {
     console.log("Mouse out")
 }
 
-
+// PLAYING WITH FOR IN METHOD
 var lugCars = ['Bently', 'Porch', 'Hummer', 'Viper', 'Testla'];
 
 var x, txt;
